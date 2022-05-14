@@ -1,6 +1,16 @@
 {
     "extends": "@tsconfig/strictest/tsconfig.json",
     "compilerOptions": {
-        "jsx": "preserve"
-    }
+        "exactOptionalPropertyTypes": false,
+        "jsx": "preserve",
+        "baseUrl": ".",
+        "paths": {
+            "~/*": [
+                "./src/*"
+            ]
+        }
+    },
+    "include": [
+        "src"
+    ]
 }
